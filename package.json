@@ -1,5 +1,5 @@
 {
-  "name": "track-shows",
+  "name": "TrackShows",
   "version": "1.0.0",
   "description": "TV Show Tracker",
   "main": "server.js",
