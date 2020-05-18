@@ -1,0 +1,183 @@
+$highlight-color: #3686be;
+$highlight-background: #f5f5f5;
+$secondary-color: #fff;
+$card-width: 356.25px;
+
+html,
+.bg-color {
+  background-color: $highlight-background;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+}
+
+.no-decoration {
+  text-decoration: none;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.secondary-textcolor {
+  color: $secondary-color;
+}
+
+.modalbtn-margin {
+  margin-top: 2rem;
+}
+
+.ml-icon {
+  margin-left: 1.25rem;
+}
+
+.mr-icon {
+  margin-right: 1.25rem;
+}
+
+.small-font {
+  font-size: 0.75rem;
+}
+
+.turnicate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+a:hover {
+  color: $secondary-color;
+}
+
+// Navbar
+
+.navbar__brand-text {
+  font-size: 1.25rem;
+}
+
+// Search
+
+.search__container {
+  position: relative;
+  z-index: 2;
+}
+
+.search__form {
+  margin: auto;
+  max-width: 555px;
+}
+
+.search__result-list {
+  background: #fff;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 555px;
+  position: absolute;
+  right: 0;
+  width: 95%;
+}
+
+// Cards
+
+.card__container {
+  background-color: #fff;
+  display: flex;
+  margin: auto;
+  max-width: 95%;
+  padding: 10px;
+  position: relative;
+}
+
+.card__badge-remaining {
+  left: 5px;
+  position: absolute;
+  top: 5px;
+}
+
+.card__badge-special {
+  left: 89px;
+  position: absolute;
+  top: 5px;
+}
+
+.card__text-container {
+  line-height: 2;
+  margin: auto;
+  min-width: 0;
+  padding-left: 10px;
+}
+
+.card__tracker-container {
+  font-size: 1.35rem;
+  min-width: 105px;
+  position: relative;
+}
+
+.card__dropdown {
+  background: #fff;
+  left: -15px;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 300px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: absolute;
+  right: -15px;
+  z-index: 1;
+}
+
+.card__dropdownSeasons.selected {
+  background: $highlight-background;
+  color: $highlight-color;
+}
+
+.card__delete-btn {
+  font-size: 1.25rem;
+  position: absolute;
+  right: 2px;
+  top: 2px;
+}
+
+// Footer
+
+.footer__link:hover {
+  color: #0000ee;
+}
+
+// Media Queries
+
+@media (min-width: 375px) {
+  .card__container {
+    max-width: $card-width;
+  }
+}
+
+@media (min-width: 800px) {
+  .cards-section {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    max-width: 1200px;
+  }
+
+  .card__container {
+    margin: 1rem;
+    width: $card-width;
+  }
+
+  .search__result:hover,
+  .card__dropdownSeasons:hover,
+  .card__dropdownEpisodes:hover {
+    background: $highlight-background;
+    color: $highlight-color;
+  }
+}
