@@ -74,7 +74,7 @@ export default function Search(props) {
                 >
                   <div className="mr-2">
                     <img
-                      src={show.show.image.medium.replace(/http/, "https")}
+                      src={show.show.image.medium}
                       alt="poster"
                       height="100"
                       width="70"

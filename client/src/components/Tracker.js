@@ -181,7 +181,7 @@ class Tracker extends Component {
             : null,
           status: data.status,
           hasNewSpecial: false,
-          thumbnail: data.image.medium.replace(/http/, "https"),
+          thumbnail: data.image.medium,
           user: this.props.auth.user._id,
         });
       });
