@@ -15,14 +15,17 @@
   "license": "MIT",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "client": "^0.0.1",
     "concurrently": "^5.0.2",
     "config": "^3.3.0",
+    "cookie-session": "^2.0.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "helmet": "^3.21.3",
     "heroku-ssl-redirect": "0.0.4",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.8.6",
+    "node-fetch": "^2.6.7",
     "serve": "^11.3.0"
   },
   "devDependencies": {
