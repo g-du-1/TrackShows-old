@@ -5,6 +5,7 @@ const path = require("path");
 const config = require("config");
 const helmet = require("helmet");
 const sslRedirect = require("heroku-ssl-redirect");
+const cookieSession = require("cookie-session");
 
 mongoose.Promise = global.Promise;
 
@@ -12,8 +13,14 @@ const app = express();
 
 app.use(helmet());
 app.use(express.json({ limit: "500kb" }));
-app.use(cors());
-app.use(sslRedirect());
+// app.use(cors());
+// app.use(sslRedirect());
+
+app.use(
+  cookieSession({
+    secret: config.get('cookieSecret')
+  })
+);
 
 const db = config.get("mongoURI");
 
