@@ -15,6 +15,7 @@ import {
   toggleShowsUpdating,
 } from "../actions/showActions";
 import { loadUser } from "../actions/authActions";
+import TraktLogin from "./TraktLogin";
 
 // TODO move search result state to redux
 // Use hooks for new components
@@ -518,7 +519,10 @@ class Tracker extends Component {
             <Footer />
           </>
         ) : (
-          <Welcome />
+          <>
+            <Welcome />
+            <TraktLogin />
+          </>
         )}
       </div>
     );
